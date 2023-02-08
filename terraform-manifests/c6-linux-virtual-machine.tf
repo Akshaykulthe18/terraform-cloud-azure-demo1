@@ -1,7 +1,7 @@
 # Resource: Azure Linux Virtual Machine
 resource "azurerm_linux_virtual_machine" "mylinuxvm" {
-  name                = local.vm_name
-  computer_name       = local.vm_name # Hostname of the VM
+  name                = local.vm_name1
+  computer_name       = local.vm_name1 # Hostname of the VM
   resource_group_name = azurerm_resource_group.myrg.name
   location            = azurerm_resource_group.myrg.location
   size                = "Standard_DS1_v2"
